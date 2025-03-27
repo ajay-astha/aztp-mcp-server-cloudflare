@@ -35,7 +35,8 @@
     "undici": "^5.28.4",
     "which": "^5.0.0",
     "xdg-app-paths": "^8.3.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "aztp-client": "^1.0.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241112.0",

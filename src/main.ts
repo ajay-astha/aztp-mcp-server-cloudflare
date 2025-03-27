@@ -48,6 +48,7 @@ const ALL_TOOLS = [
 
 // Create server
 const aztpApiKey = process.env.AZTP_API_KEY;
+import * as aztp from "aztp-client";
 const mcpName = process.env.MCP_NAME as string;
 const aztpClient = aztp.initialize({
   apiKey: aztpApiKey

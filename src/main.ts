@@ -47,6 +47,12 @@ const ALL_TOOLS = [
 ]
 
 // Create server
+const aztpApiKey = process.env.AZTP_API_KEY;
+const mcpName = process.env.MCP_NAME as string;
+const aztpClient = aztp.initialize({
+  apiKey: aztpApiKey
+});
+
 const server = new Server(
   { name: 'cloudflare', version: '1.0.0' }, // Changed from cloudflare-kv to cloudflare
   { capabilities: { tools: {} } },
